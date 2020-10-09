@@ -3,13 +3,20 @@
 All images used belong to Hannah Rausch-->
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   background-color: #07003e;
   color: #e1e1e1;
 }
-.center {
-  text-align: center
+.column {
+    float: left;
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 h1 {
     color: #d70000;
@@ -29,42 +36,59 @@ img {
   margin-right: auto;
   width: 40%;
 }
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%
+    }
+}
 </style>
 </head>
 <body>
 
-<h1 style="text-align:center;">Hannah Rausch</h1>
-<p style="text-align:center;"><a href="mailto:hannahirausch@lewisu.edu">hannahirausch@lewisu.edu</a></p>
-<img src="Hannah-Rausch-Picture.jpg" alt="Hannah Rausch" style="width: 250px">
+<div class="row">
+ <div class="column">
+  <h1 style="text-align:center;">Hannah Rausch</h1>
+  <p style="text-align:center;"><a href="mailto:hannahirausch@lewisu.edu">hannahirausch@lewisu.edu</a></p>
+  <img src="Hannah-Rausch-Picture.jpg" alt="Hannah Rausch" style="width: 250px">
+ </div>
 
-<h2 style="text-align:center;">Introduction</h2>
-<p style="text-align:center;">Hi, I'm Hannah! I'm originally from Joliet, IL. I graduated from Joliet Central High School, which is sometimes referred to as "the castle" in Downtown Joliet. I enjoy drawing, leatherworking, and going to the range. I used to shoot pellet rifles competitively in high school, and I still enjoy going to the range for fun target practice.
+ <div class="column">
+  <h2 style="text-align:center;">Introduction</h2>
+  <p style="text-align:center;">Hi, I'm Hannah! I'm originally from Joliet, IL. I graduated from Joliet Central High School, which is sometimes referred to as "the castle" in Downtown Joliet. I enjoy drawing, leatherworking, and going to the range. I used to shoot pellet rifles competitively in high school, and I still enjoy going to the range for fun target practice.
     I'm actually a self-taught leatherworker. It was quite the endeavor! I am an applied physics major, and I hope to become a scientific or research officer in the Air Force.
 
 </p>
 
-<p style="text-align:center;">My family consists of me, my mom, my dad, my sister, and my two dogs. My mom is an administrative and operations assistant at BMO Harris Bank.
+  <p style="text-align:center;">My family consists of me, my mom, my dad, my sister, and my two dogs. My mom is an administrative and operations assistant at BMO Harris Bank.
     My dad works as a lanscape estimator. My sister is nine and a half years older than me and lives in Iowa. I also have three nephews: Connor, Lennox, and Remmington.
     My two dogs are Ollie and Buster. They are littermates and have only been apart for a week in their lives. They are dachshund/pitbull terrier mixes.
-</p>
-<img src="Dogs.jpg" alt="Ollie and Buster" style="width: 300px">
-
-<h2>What I Hope to Learn in this Course</h2>
-<ul style="list-style-type:square;">
-<li>Programming in Python</li>
-<li>Artificial Intelligence</li>
-<li>Security</li>
-</ul>
+  </p>
+  <img src="Dogs.jpg" alt="Ollie and Buster" style="width: 300px">
+ </div>
+</div>
+<div class="row">
+ <div class="column">
+  <h2 style="text-align:center">What I Hope to Learn in this Course</h2>
+  <ul style="list-style-type:square; text-align:center;">
+   <li>Programming in Python</li>
+   <li>Artificial Intelligence</li>
+   <li>Security</li>
+  </ul>
+ </div>
+ <div class="column">
+  <h2 style="text-align:center;">Greatest Innovation</h2>
+  <ul style="list-style-type:square; text-align:center;">
+   <li><a href="https://www.britannica.com/technology/transistor">Transistor</a></li>
+   <li><a href="https://www.britannica.com/technology/integrated-circuit">Integrated Circuit Board</a></li>
+   <li><a href="https://www.britannica.com/technology/personal-computer">Personal Computer</a></li>
+  </ul>
+ </div>
+</div>
 
 <h2 style="text-align:center;">My Favorite Hobby</h2>
-<p style="text-align:center;">My favorite hobby is leatherworking. As mentioned before, I am self-taught. I've been doing leatherworking since early high school. It was just one of those hobbies that I came across and thought was cool, so I decided to try it. I ended up loving it. I've made wallets, belts, keychains, and knife sheaths. My most recent project was actually making a knife sheath for a friend of mine. I'm not currently doing any leatherworking due to my school schedule, but I am planning on making a wallet for myself in the future.</p>
+<p style="text-align:center; margin-left:50px; margin-right:50px;">My favorite hobby is leatherworking. As mentioned before, I am self-taught. I've been doing leatherworking since early high school. It was just one of those hobbies that I came across and thought was cool, so I decided to try it. I ended up loving it. I've made wallets, belts, keychains, and knife sheaths. My most recent project was actually making a knife sheath for a friend of mine. I'm not currently doing any leatherworking due to my school schedule, but I am planning on making a wallet for myself in the future.</p>
 <img src="Knife-Sheath.JPG" alt="Knife Sheath" style="width: 200px">
-<h2>Greatest Innovation</h2>
-<ul style="list-style-type:square;">
-<li><a href="https://www.britannica.com/technology/transistor">Transistor</a></li>
-<li><a href="https://www.britannica.com/technology/integrated-circuit">Integrated Circuit Board</a></li>
-<li><a href="https://www.britannica.com/technology/personal-computer">Personal Computer</a></li>
-</ul>
+
 
 <h2 style="text-align:center;">Fun Fact</h2>
 <p style="text-align:center;">I play Dungeons & Dragons. I'm usually the dungeon master. Below is my dicebag that I made, Fafnir.</p>
