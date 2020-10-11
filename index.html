@@ -24,8 +24,13 @@ h1 {
 h2 {
     color: #d70000;
 }
+.parent {
+    text-align: center;
+}
 ul {
     color: #e1e1e1;
+    display: inline-block;
+    text-align: left;
 }
 a {
     color: #e1e1e1;
@@ -69,19 +74,23 @@ img {
 <div class="row">
  <div class="column">
   <h2 style="text-align:center">What I Hope to Learn in this Course</h2>
-  <ul style="list-style-type:square; text-align:center;">
-   <li>Programming in Python</li>
-   <li>Artificial Intelligence</li>
-   <li>Security</li>
-  </ul>
+  <div class="parent">
+   <ul style="list-style-type:square;">
+    <li>Programming in Python</li>
+    <li>Artificial Intelligence</li>
+    <li>Security</li>
+   </ul>
+  </div>
  </div>
  <div class="column">
   <h2 style="text-align:center;">Greatest Innovation</h2>
-  <ul style="list-style-type:square; text-align:center;">
-   <li><a href="https://www.britannica.com/technology/transistor">Transistor</a></li>
-   <li><a href="https://www.britannica.com/technology/integrated-circuit">Integrated Circuit Board</a></li>
-   <li><a href="https://www.britannica.com/technology/personal-computer">Personal Computer</a></li>
-  </ul>
+  <div class="parent">
+   <ul style="list-style-type:square;">
+    <li><a href="https://www.britannica.com/technology/transistor">Transistor</a></li>
+    <li><a href="https://www.britannica.com/technology/integrated-circuit">Integrated Circuit Board</a></li>
+    <li><a href="https://www.britannica.com/technology/personal-computer">Personal Computer</a></li>
+   </ul>
+  </div>
  </div>
 </div>
 
